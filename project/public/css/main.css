@@ -40,4 +40,12 @@ body {
     background-color: var(--background-color);
     font-family: "Imprima", serif;
     font-weight: 400;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--text-color);
+    font-family: "Palanquin Dark", serif;
+    font-weight: 700;
 }

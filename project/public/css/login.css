@@ -8,3 +8,64 @@
     --success-color: #2ecc71;
 }
 
+.box {
+    background-color: var(--accentTwo-color);
+    border-radius: 10px;
+    border: 5px solid var(--accentOne-color);
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.loginForm {
+    background-color: var(--plain-color);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.innerForm {
+    background-color: var(--plain-color);
+    border-color: var(--accentOne-color);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+form label, form input {
+    padding: 10px;
+    margin: 10px;
+}
+
+form input {
+    border-radius: 10px;
+    border: 2px solid var(--accentOne-color);
+    color: var(--text-color);
+    width: 90%;
+    max-width: 20rem;
+}
+
+.loginButton {
+    background-color: var(--accentTwo-color);
+    font-weight: bold;
+    max-width: 10rem;
+    display: block;
+    margin: auto;
+}
+
+#createAccount {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}

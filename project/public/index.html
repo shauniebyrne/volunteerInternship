@@ -16,18 +16,18 @@
 <body>
     <main>
         <div class="box">
-            <img src="images/smallLogo.png" alt="Extended Foster Care Logo">
-            <form action="">
-                <fieldset>
+            <img src="images/smallLogo.png" alt="Extended Foster Care Logo" id="logo">
+            <form action="" class="loginForm">
+                <fieldset class="innerForm">
                     <legend>Fields with * are required</legend>
                     <label class="labelBox">Username: *
-                        <input type="text"  name="username" required autofocus></label>
+                        <input type="text" name="username" required></label>
                     <label class="labelBox">Password: * (must be at least 8 characters and have at least one upper case letter, one number, and one symbol)
                          <input type="password" name="password" required minlength="8"></label>
-                    <input class="labelBox" type="submit" value="Login">
+                    <input class="loginButton" type="submit" value="Login">
                 </fieldset>
             </form>
-            <a href="account.html">Create Account</a>
+            <a id="createAccount" href="account.html">Create Account</a>
         </div>
     </main>
 </body>
