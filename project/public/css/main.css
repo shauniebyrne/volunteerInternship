@@ -1,0 +1,43 @@
+:root {
+    --accentOne-color: #DD8844;
+    --accentTwo-color: #E9B872;
+    --plain-color: #FAF9F6;
+    --text-color: #502419;
+    --background-color: #6494AA;
+    --danger-color: #e74c3c;
+    --success-color: #2ecc71;
+}
+
+/* Font - palanquin dark
+regular
+    font-family: "Palanquin Dark", serif;
+    font-weight: 400;
+    font-style: normal;
+medium
+    font-family: "Palanquin Dark", serif;
+    font-weight: 500;
+    font-style: normal;
+semibold
+    font-family: "Palanquin Dark", serif;
+    font-weight: 600;
+    font-style: normal;
+bold
+    font-family: "Palanquin Dark", serif;
+    font-weight: 700;
+    font-style: normal;
+Font - imprima
+regular
+  font-family: "Imprima", serif;
+  font-weight: 400;
+  font-style: normal;*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Imprima", serif;
+    font-weight: 400;
+}
