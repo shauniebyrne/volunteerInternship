@@ -23,12 +23,30 @@
                     <label class="labelBox">Username: *
                         <input type="text" name="username" required></label>
                     <label class="labelBox">Password: * (must be at least 8 characters and have at least one upper case letter, one number, and one symbol)
-                         <input type="password" name="password" required minlength="8"></label>
+                         <input id="passwordInput" type="password" name="password" required minlength="8"> <button class="eye" onclick="togglePasswordVisibility()">&#128065;</button>
+                    </label>
+                    <label class="labelBox">Choose One: *
+                        <select name="signee" id="signee" required>
+                            <option value="coach">Coach</option>
+                            <option value="provider">House Provider</option>
+                            <option value="admin">Administration</option>
+                        </select>
+                    </label>
                     <input class="loginButton" type="submit" value="Login">
                 </fieldset>
             </form>
             <a id="createAccount" href="account.html">Create Account</a>
         </div>
     </main>
+    <script>
+        function togglePasswordVisibility() {
+          const passwordInput = document.getElementById("passwordInput");
+          if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+          } else {
+            passwordInput.type = "password";
+          }
+        }
+      </script>
 </body>
 </html>

@@ -41,17 +41,24 @@
     font-weight: bold;
 }
 
-form label, form input {
+form label, form input, #signee {
     padding: 10px;
     margin: 10px;
 }
 
-form input {
+form input, #signee {
     border-radius: 10px;
     border: 2px solid var(--accentOne-color);
     color: var(--text-color);
     width: 90%;
     max-width: 20rem;
+}
+
+.eye {
+    border-radius: 5px;
+    border: 2px solid var(--accentOne-color);
+    color: var(--text-color);
+    font-size: 20px;
 }
 
 .loginButton {
