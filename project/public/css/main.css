@@ -48,4 +48,139 @@ h1, h2, h3, h4, h5 {
     color: var(--text-color);
     font-family: "Palanquin Dark", serif;
     font-weight: 700;
+    text-align: center;
+    padding: 2px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: center;
+    padding: 2px;
+}
+
+/* Navigation Bar for all pages */
+
+header {
+    background-color: var(--accentTwo-color);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header section {
+    padding: 5px;
+    margin: 5px;
+}
+
+header .welcome {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+header button {
+    background-color: var(--plain-color);
+    font-weight: bold;
+    max-width: 10rem;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav {
+    margin-left: 25px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 10px;
+	padding: 10px;
+	overflow: hidden;
+    background-color: var(--accentOne-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    background-color: var(--plain-color);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li a {
+        color: var(--text-color);
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+/* box css for all pages */
+.outerBox {
+    background-color: var(--accentTwo-color);
+    border-radius: 10px;
+    border: 5px solid var(--accentOne-color);
+    display: block;
+    max-width: 65%;
+    margin: 10px auto;
+}
+
+.outerBoxLower {
+    background-color: var(--accentTwo-color);
+    border-radius: 10px;
+    border: 5px solid var(--accentOne-color);
+    display: block;
+    margin: 10px;
+}
+
+.innerBox {
+    background-color: var(--plain-color);
+    border-color: var(--accentOne-color);
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 5px;
+    max-width: 55%;
+}
+
+.middleBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.innerBoxes {
+    background-color: var(--plain-color);
+    border-color: var(--accentOne-color);
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.innerBoxes button, .innerBox button {
+    background-color: var(--accentTwo-color);
+    font-weight: bold;
+    max-width: 10rem;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
