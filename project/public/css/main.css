@@ -64,6 +64,10 @@ h3 {
     font-size: 1.5rem;
 }
 
+h4 {
+    font-size: 1.1rem;
+}
+
 p {
     text-align: center;
     padding: 2px;
@@ -77,6 +81,7 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 header section {
@@ -131,6 +136,16 @@ nav ul li a {
 
 nav ul li:hover {
     transform: scale(1.2);
+}
+
+header button {
+    background-color: var(--plain-color);
+    font-weight: bold;
+    max-width: 10rem;
+    padding: 5px;
+    border: 5px solid var(--accentOne-color);
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* box css for all pages */

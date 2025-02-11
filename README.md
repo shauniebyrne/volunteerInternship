@@ -13,15 +13,18 @@ User will enter their wanted username, email, password, confirm password (backgr
 
 # Form Page (provider)
 ---
+# Provider Form
+This form is for the Provider to fill out their personal firms information. This will be used to be included with the Building Info Page and the Unit Info Page.
+
 # Building Form
-The Provider will fill out this form for all the buildings they own that they want available to be rented out. The form's info will be directed to the database to be able to be retrieved later on the provider, map, building info, unit info, buildings, and units pages.
+The Provider will fill out this form for all the buildings they own that they want available to be rented out. The form's info will be directed to the database to be able to be retrieved later on the provider, map, building info, unit info, buildings, and units pages. Provider will be able to click "+ Add more Buildings" to add more information to the database without having to create a form every time (so they can add all buildings at once).
 
 # Unit Form
-The Provider will fill out this form for all the units they own that they want available to be rented out. The form's info will be directed to the database to be able to be retrieved later on the provider, map, building info, unit info, buildings, and units pages.
+The Provider will fill out this form for all the units they own that they want available to be rented out. The form's info will be directed to the database to be able to be retrieved later on the provider, map, building info, unit info, buildings, and units pages. Provider will be able to click on "Add more Units" to be able to add more information to the database all at once (add all units all at once).
 ---
 
 # Provider Page (provider)
-The Provider is directed to this page after logging in. Here, they will be able to see a list of all their buildings and associated units. They should be able to edit the information here (via a button with a link to a new form) or be able to delete all the information for that specific unit or building.
+The Provider is directed to this page after logging in. Here, they will be able to see a list of all their buildings and associated units. They should be able to edit the information here (via a button with a link to a new form) or be able to delete all the information for that specific unit or building or their own personal information.
 ---
 
 # Map Page (coach)
@@ -42,3 +45,14 @@ This page can be accessed by a coach via the navigation bar at the top of the pa
 # Units Page (coach)
 This page can be accessed by a coach via the navigation bar at the top of the page and will list all available units. The Providers name and building name will be added (accessed through database) and the name of the unit will be linked to unitInfo.html so they can press the "rent" button.
 ---
+
+# Database
+4 tables
+
+1: Login/Account Information - Username, Email, Password, Status (Coach, Provider, Admin)
+
+2: Provider Information - Name, Address, Contact Information
+
+3: Building Information - Key is Provider Name (that way when any information is saved or used for pages, it is connected to the right provider - for instance, when a provider logs in, they can only see their buildings/units; when a coach clicks on the map to see a building, the information for the provider pops up too), 
+
+4: Unit Information - Key is Building Information (so when a building is clicked on, the unit information is connected), 

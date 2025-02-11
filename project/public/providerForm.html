@@ -33,38 +33,21 @@
     </header>
     <main>
         <div class="box">
-            <p>Below is the information to fill out about the building and/or complex your units are placed in.</p>
             <form action="" class="loginForm">
                 <fieldset class="innerForm">
                     <legend>Fields with * are required</legend>
-                    <label class="labelBox">Building Name: *
-                        <input type="text" name="buildingName" required>
+                    <label class="labelBox">Company Name: *
+                        <input type="text" name="companyName" required>
                     </label>
-                    <label class="labelBox">Street Address: *
-                        <input type="text" name="buildingStreet" required>
-                    </label>
-                    <label class="labelBox">City: *
-                        <input type="text" name="buildingCity" required>
-                    </label>
-                    <label class="labelBox">State: *
-                        <input type="text" name="buildingState" required>
-                    </label>
-                    <label class="labelBox">ZIP Code: *
-                        <input type="text" name="buildingZIP" required>
-                    </label>
-                    <label class="labelBox">Primary Contact Phone Number: *
-                        <input type="tel" name="buildingPhnNmbr" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7891">
+                    <label class="labelBox">Company Name: *
+                        <input type="text" name="companyName" required>
                     </label>
                     <label class="labelBox">Contact Email: *
                         <input type="email" name="companyEmail" required placeholder="companyname@gmail.com">
                     </label>
-                    <fieldset class="radioInput">
-                        <legend class="labelBox">Resident Assistance (RA)?</legend>
-                            <input type="radio" id="RAyes" name="RAyesNo" value="yes">
-                            <label class="labelBox" for="RAyes">Yes</label>
-                            <input type="radio" id="RAno" name="RAyesNo" value="No">
-                            <label class="labelBox" for="RAno">No</label>
-                    </fieldset>
+                    <label class="labelBox">Contact Phone Number: *
+                        <input type="tel" name="companyPhone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7891">
+                    </label>
                     <input class="loginButton" type="submit" value="Create">
                 </fieldset>
             </form>
