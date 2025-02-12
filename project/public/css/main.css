@@ -84,11 +84,6 @@ header {
     justify-content: space-between;
 }
 
-header section {
-    padding: 5px;
-    margin: 5px;
-}
-
 header .welcome {
     font-weight: bold;
     font-size: 1.25rem;
@@ -98,8 +93,8 @@ header button {
     background-color: var(--plain-color);
     font-weight: bold;
     max-width: 10rem;
-    margin-top: 5px;
     padding: 5px;
+    border: 5px solid var(--accentOne-color);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -136,16 +131,6 @@ nav ul li a {
 
 nav ul li:hover {
     transform: scale(1.2);
-}
-
-header button {
-    background-color: var(--plain-color);
-    font-weight: bold;
-    max-width: 10rem;
-    padding: 5px;
-    border: 5px solid var(--accentOne-color);
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 /* box css for all pages */
