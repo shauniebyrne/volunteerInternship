@@ -8,7 +8,7 @@
     <link rel="shortcut Icon" href="favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/unitForm.css">
+    <link rel="stylesheet" href="css/infoForm.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Imprima&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
                 <li><a href="provider.html">Entered Data</a></li>
                 <li><a href="providerForm.html">Provider Form</a></li>
                 <li><a href="buildingform.html">Building Form</a></li>
-                <li><a href="unit.html">Unit Form</a></li>
+                <li><a href="unitform.html">Unit Form</a></li>
             </ul>
         </nav>
         <section class="welcome">
@@ -32,7 +32,127 @@
         <button>Sign Out</button>
     </header>
     <main>
-        
+        <div class="box">
+            <p>Below is the information to fill out about the units within your building.</p>
+            <form action="" class="loginForm">
+                <fieldset class="innerForm">
+                    <legend>Please answer all questions</legend>
+                    <label>Building Name:
+                        <input type="text" name="buildingsName" required>
+                    </label>
+                    <label>Unit Number, Apartment Number, or House Number:
+                        <input type="text" name="unitNum" required>
+                    </label>
+                    <fieldset class="innerForm">
+                        <legend>Phase:</legend>
+                        <p>Phase 1: Supervised Living</p>
+                        <p>Young adults live in group homes with 24/7 support to develop basic life skills like budgeting and self-care. 
+                            Daily guidance helps them set personal goals and gain confidence.
+                        </p>
+                        <p>Phase 2: Semi-Independent Living</p>
+                        <p>Participants move to semi-independent housing with moderate oversight, focusing on managing finances and securing
+                            employment. Weekly check-ins ensure continued progress while fostering independence.
+                        </p>
+                        <p>Phase 3: Independent Living</p>
+                        <p>Residents transition to fully independent living, handling their own apartments, expenses, and responsibilities.
+                            Minimal support is provided through occasional check-ins and access to community resources.
+                        </p>
+                            <input type="radio" id="phase1" name="phases" value="Phase1">
+                            <label class="labelBox" for="phase1">Phase 1</label>
+                            <input type="radio" id="phase2" name="phases" value="Phase1">
+                            <label class="labelBox" for="phase2">Phase 2</label>
+                            <input type="radio" id="phase3" name="phases" value="Phase1">
+                            <label class="labelBox" for="phase3">Phase 3</label>
+                    </fieldset>
+                    <fieldset class="innerForm">
+                        <legend>Living Arrangements?</legend>
+                            <input type="radio" id="thousing" name="housing" value="TransitionalHousing">
+                            <label class="labelBox" for="thousing">Transitional Housing</label>
+                            <input type="radio" id="phousing" name="housing" value="PrivateHousing">
+                            <label class="labelBox" for="phousing">Private Housing</label>
+                            <input type="radio" id="shousing" name="housing" value="SharedHousing">
+                            <label class="labelBox" for="shousing">Shared Housing</label>
+                            <label>Other:
+                                <input type="text" name="petOther" placeholder="Please explain why you chose other">
+                            </label>
+                    </fieldset>
+                    <fieldset class="innerForm">
+                        <legend>Gender: (check all that apply)</legend>
+                            <input type="checkbox" id="female" name="female" value="Female">
+                            <label class="labelBox" for="female">Female</label>
+                            <input type="checkbox" id="male" name="male" value="Male">
+                            <label class="labelBox" for="male">Male</label>
+                            <input type="checkbox" id="bGender" name="bGender" value="EitherGenders">
+                            <label class="labelBox" for="bGender">Either Genders</label>
+                    </fieldset>
+                    <fieldset class="innerForm">
+                        <legend>Unit type:</legend>
+                            <input type="radio" id="sharedApt" name="unitType" value="SharedApartment">
+                            <label class="labelBox" for="sharedApt">Shared apartment but with independent living space</label>
+                            <input type="radio" id="sharedlvin" name="unitType" value="SharedLiving">
+                            <label class="labelBox" for="sharedlvin">Shared Living (with roommates)</label>
+                            <input type="radio" name="unitType" id="studio" value="Studio">
+                            <label class="labelBox" for="studio">Studio</label>
+                            <input type="radio" name="unitType" id="1bed" value="1bed">
+                            <label class="labelBox" for="1bed">1 Bedroom</label>
+                            <input type="radio" name="unitType" id="2bed" value="2bed">
+                            <label class="labelBox" for="2bed">2 Bedroom</label>
+                            <input type="radio" name="unitType" id="mhu" value="MaternityHousingUnit">
+                            <label class="labelBox" for="mhu">Maternity Housing Unit</label>
+                            <label>Other:
+                                <input type="text" name="uTypeOther" placeholder="Please explain why you chose other">
+                            </label>
+                    </fieldset>
+                    <label>If unit is shared, how many beds are available for residents?
+                        <input type="number" name="numBeds" min="0" max="10">
+                    </label>
+                    <label>Monthly cost for unit:
+                        <input type="number" name="rent">
+                    </label>
+                    <fieldset class="innerForm">
+                        <legend>Furnished:</legend>
+                            <input type="radio" id="fullyfur" name="furnished" value="FullyFurnished">
+                            <label class="labelBox" for="fullyfur">Fully Furnished</label>
+                            <input type="radio" id="parfur" name="furnished" value="PartiallyFurnished">
+                            <label class="labelBox" for="parfur">Partially Furnished</label>
+                            <input type="radio" id="notfur" name="notfur" value="No">
+                            <label class="labelBox" for="notfur">Not Furnished</label>
+                    </fieldset>
+                    <label>Age range for housing unit:
+                        <input type="text" name="age">
+                    </label>
+                    <fieldset class="innerForm">
+                        <legend>Kitchen:</legend>
+                            <input type="radio" id="pKitchen" name="kitchen" value="PersonalKitchen">
+                            <label class="labelBox" for="pKitchen">Personal Kitchen (inside unit)</label>
+                            <input type="radio" id="sKitchen" name="kitchen" value="SharedKitchen">
+                            <label class="labelBox" for="sKitchen">Shared Kitchen (within the building)</label>
+                            <input type="radio" id="noKitchen" name="kitchen" value="NoKitchen">
+                            <label class="labelBox" for="noKitchen">No Kitchen Access</label>
+                    </fieldset>
+                    <fieldset class="innerForm">
+                        <legend>Bathroom:</legend>
+                            <input type="radio" id="pbath" name="bathroom" value="PersonalBathroom">
+                            <label class="labelBox" for="pbath">Personal Bathroom (inside unit)</label>
+                            <input type="radio" id="sbath" name="bathroom" value="SharedBathroom">
+                            <label class="labelBox" for="sbath">Shared Bathroom (within the building)</label>
+                    </fieldset>
+                    <label>How many bathrooms are in unit?
+                        <input type="number" name="numBath">
+                    </label>
+                    <fieldset class="innerForm">
+                        <legend>Laundry:</legend>
+                            <input type="radio" id="pLaundry" name="laundry" value="PersonalLaundry">
+                            <label class="labelBox" for="pLaundry">Personal Laundry (inside unit)</label>
+                            <input type="radio" id="sLaundry" name="laundry" value="SharedLaundry">
+                            <label class="labelBox" for="sLaundry">Shared Laundry (within the building)</label>
+                            <input type="radio" id="noLaundry" name="laundry" value="noLaundry">
+                            <label class="labelBox" for="noLaundry">No Laundry Services</label>
+                    </fieldset>
+                    <input class="loginButton" type="submit" value="Create">
+                </fieldset>
+            </form>
+        </div>
     </main>
 </body>
 </html>
