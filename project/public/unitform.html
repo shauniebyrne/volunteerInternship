@@ -43,6 +43,12 @@
                     <label>Unit Number, Apartment Number, or House Number:
                         <input type="text" name="unitNum" required>
                     </label>
+                    <label>Monthly cost for unit:
+                        <input type="number" name="rent">
+                    </label>
+                    <label>Age range for housing unit:
+                        <input type="text" name="age">
+                    </label>
                     <fieldset class="innerForm">
                         <legend>Phase:</legend>
                         <p>Phase 1: Supervised Living</p>
@@ -65,7 +71,16 @@
                             <label class="labelBox" for="phase3">Phase 3</label>
                     </fieldset>
                     <fieldset class="innerForm">
-                        <legend>Living Arrangements?</legend>
+                        <legend>Gender:</legend>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label class="labelBox" for="female">Female</label>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label class="labelBox" for="male">Male</label>
+                            <input type="radio" id="bGender" name="gender" value="EitherGenders">
+                            <label class="labelBox" for="bGender">Either Genders</label>
+                    </fieldset>
+                    <fieldset class="innerForm">
+                        <legend>Living Arrangements:</legend>
                             <input type="radio" id="thousing" name="housing" value="TransitionalHousing">
                             <label class="labelBox" for="thousing">Transitional Housing</label>
                             <input type="radio" id="phousing" name="housing" value="PrivateHousing">
@@ -75,15 +90,6 @@
                             <label>Other:
                                 <input type="text" name="petOther" placeholder="Please explain why you chose other">
                             </label>
-                    </fieldset>
-                    <fieldset class="innerForm">
-                        <legend>Gender: (check all that apply)</legend>
-                            <input type="checkbox" id="female" name="female" value="Female">
-                            <label class="labelBox" for="female">Female</label>
-                            <input type="checkbox" id="male" name="male" value="Male">
-                            <label class="labelBox" for="male">Male</label>
-                            <input type="checkbox" id="bGender" name="bGender" value="EitherGenders">
-                            <label class="labelBox" for="bGender">Either Genders</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Unit type:</legend>
@@ -103,12 +109,6 @@
                                 <input type="text" name="uTypeOther" placeholder="Please explain why you chose other">
                             </label>
                     </fieldset>
-                    <label>If unit is shared, how many beds are available for residents?
-                        <input type="number" name="numBeds" min="0" max="10">
-                    </label>
-                    <label>Monthly cost for unit:
-                        <input type="number" name="rent">
-                    </label>
                     <fieldset class="innerForm">
                         <legend>Furnished:</legend>
                             <input type="radio" id="fullyfur" name="furnished" value="FullyFurnished">
@@ -118,36 +118,31 @@
                             <input type="radio" id="notfur" name="notfur" value="No">
                             <label class="labelBox" for="notfur">Not Furnished</label>
                     </fieldset>
-                    <label>Age range for housing unit:
-                        <input type="text" name="age">
-                    </label>
                     <fieldset class="innerForm">
-                        <legend>Kitchen:</legend>
-                            <input type="radio" id="pKitchen" name="kitchen" value="PersonalKitchen">
-                            <label class="labelBox" for="pKitchen">Personal Kitchen (inside unit)</label>
-                            <input type="radio" id="sKitchen" name="kitchen" value="SharedKitchen">
-                            <label class="labelBox" for="sKitchen">Shared Kitchen (within the building)</label>
-                            <input type="radio" id="noKitchen" name="kitchen" value="NoKitchen">
-                            <label class="labelBox" for="noKitchen">No Kitchen Access</label>
-                    </fieldset>
-                    <fieldset class="innerForm">
-                        <legend>Bathroom:</legend>
-                            <input type="radio" id="pbath" name="bathroom" value="PersonalBathroom">
-                            <label class="labelBox" for="pbath">Personal Bathroom (inside unit)</label>
-                            <input type="radio" id="sbath" name="bathroom" value="SharedBathroom">
-                            <label class="labelBox" for="sbath">Shared Bathroom (within the building)</label>
-                    </fieldset>
-                    <label>How many bathrooms are in unit?
-                        <input type="number" name="numBath">
-                    </label>
-                    <fieldset class="innerForm">
-                        <legend>Laundry:</legend>
-                            <input type="radio" id="pLaundry" name="laundry" value="PersonalLaundry">
+                        <legend>Unit Includes: (check all that apply)</legend>
+                            <input type="checkbox" id="ktchn" name="ktchn" value="kitchen">
+                            <label class="labelBox" for="ktchn">Kitchen</label>
+                            <input type="checkbox" id="prvtBath" name="prvtBath" value="PrivateBath">
+                            <label class="labelBox" for="prvtBath">Private Bathroom (in room)</label>
+                            <input type="checkbox" id="shrdBath" name="shrdBath" value="Shared Bathroom">
+                            <label class="labelBox" for="shrdBath">Shared Bathroom</label>
+                            <input type="checkbox" id="pLaundry" name="plaundry" value="PersonalLaundry">
                             <label class="labelBox" for="pLaundry">Personal Laundry (inside unit)</label>
-                            <input type="radio" id="sLaundry" name="laundry" value="SharedLaundry">
+                            <input type="checkbox" id="sLaundry" name="slaundry" value="SharedLaundry">
                             <label class="labelBox" for="sLaundry">Shared Laundry (within the building)</label>
-                            <input type="radio" id="noLaundry" name="laundry" value="noLaundry">
-                            <label class="labelBox" for="noLaundry">No Laundry Services</label>
+                            <input type="checkbox" id="dningRoom" name="dningRoom" value="DiningRoom">
+                            <label class="labelBox" for="dningRoom">Dining Room</label>
+                            <input type="checkbox" id="lvingRoom" name="lvingRoom" value="LivingRoom">
+                            <label class="labelBox" for="lvingRoom">Living Room</label>
+                            <input type="checkbox" id="wifi" name="wifi" value="Wifi">
+                            <label class="labelBox" for="wifi">Wifi</label>
+                    </fieldset>
+                    <fieldset class="innerForm">
+                        <legend>Does unit have stairs (either inside unit or to access unit)?</legend>
+                            <input type="radio" id="stairsYes" name="stairsYesNo" value="Yes">
+                            <label class="labelBox" for="stairsYes">Yes</label>
+                            <input type="radio" id="stairsNo" name="stairsYesNo" value="No">
+                            <label class="labelBox" for="stairsNo">No</label>
                     </fieldset>
                     <input class="loginButton" type="submit" value="Create">
                 </fieldset>
