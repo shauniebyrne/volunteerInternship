@@ -37,17 +37,17 @@
             <form action="" class="loginForm">
                 <fieldset class="innerForm">
                     <legend>Please answer all questions</legend>
-                    <label>Building Name:
-                        <input type="text" name="buildingsName" required>
+                    <label class="displayLabel">Building Name:
+                        <input class="displayInput" type="text" name="buildingsName" required>
                     </label>
-                    <label>Unit Number, Apartment Number, or House Number:
-                        <input type="text" name="unitNum" required>
+                    <label class="displayLabel">Unit Number, Apartment Number, or House Number:
+                        <input class="displayInput" type="text" name="unitNum" required>
                     </label>
-                    <label>Monthly cost for unit:
-                        <input type="number" name="rent">
+                    <label class="displayLabel">Monthly cost for unit:
+                        <input class="displayInput" type="number" name="rent">
                     </label>
-                    <label>Age range for housing unit:
-                        <input type="text" name="age">
+                    <label class="displayLabel">Age range for housing unit:
+                        <input class="displayInput" type="text" name="age">
                     </label>
                     <fieldset class="innerForm">
                         <legend>Phase:</legend>
@@ -63,85 +63,85 @@
                         <p>Residents transition to fully independent living, handling their own apartments, expenses, and responsibilities.
                             Minimal support is provided through occasional check-ins and access to community resources.
                         </p>
-                            <input type="radio" id="phase1" name="phases" value="Phase1">
+                            <input class="radchckInput" type="radio" id="phase1" name="phases" value="Phase1">
                             <label class="labelBox" for="phase1">Phase 1</label>
-                            <input type="radio" id="phase2" name="phases" value="Phase1">
+                            <input class="radchckInput" type="radio" id="phase2" name="phases" value="Phase1">
                             <label class="labelBox" for="phase2">Phase 2</label>
-                            <input type="radio" id="phase3" name="phases" value="Phase1">
+                            <input class="radchckInput" type="radio" id="phase3" name="phases" value="Phase1">
                             <label class="labelBox" for="phase3">Phase 3</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Gender:</legend>
-                            <input type="radio" id="female" name="gender" value="Female">
+                            <input class="radchckInput" type="radio" id="female" name="gender" value="Female">
                             <label class="labelBox" for="female">Female</label>
-                            <input type="radio" id="male" name="gender" value="Male">
+                            <input class="radchckInput" type="radio" id="male" name="gender" value="Male">
                             <label class="labelBox" for="male">Male</label>
-                            <input type="radio" id="bGender" name="gender" value="EitherGenders">
+                            <input class="radchckInput" type="radio" id="bGender" name="gender" value="EitherGenders">
                             <label class="labelBox" for="bGender">Either Genders</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Living Arrangements:</legend>
-                            <input type="radio" id="thousing" name="housing" value="TransitionalHousing">
+                            <input class="radchckInput" type="radio" id="thousing" name="housing" value="TransitionalHousing">
                             <label class="labelBox" for="thousing">Transitional Housing</label>
-                            <input type="radio" id="phousing" name="housing" value="PrivateHousing">
+                            <input class="radchckInput" type="radio" id="phousing" name="housing" value="PrivateHousing">
                             <label class="labelBox" for="phousing">Private Housing</label>
-                            <input type="radio" id="shousing" name="housing" value="SharedHousing">
+                            <input class="radchckInput" type="radio" id="shousing" name="housing" value="SharedHousing">
                             <label class="labelBox" for="shousing">Shared Housing</label>
-                            <label>Other:
-                                <input type="text" name="petOther" placeholder="Please explain why you chose other">
+                            <label class="displayLabel">Other:
+                                <input class="displayInput" type="text" name="petOther" placeholder="Please explain why you chose other">
                             </label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Unit type:</legend>
-                            <input type="radio" id="sharedApt" name="unitType" value="SharedApartment">
+                            <input class="radchckInput" type="radio" id="sharedApt" name="unitType" value="SharedApartment">
                             <label class="labelBox" for="sharedApt">Shared apartment but with independent living space</label>
-                            <input type="radio" id="sharedlvin" name="unitType" value="SharedLiving">
+                            <input class="radchckInput" type="radio" id="sharedlvin" name="unitType" value="SharedLiving">
                             <label class="labelBox" for="sharedlvin">Shared Living (with roommates)</label>
-                            <input type="radio" name="unitType" id="studio" value="Studio">
+                            <input class="radchckInput" type="radio" name="unitType" id="studio" value="Studio">
                             <label class="labelBox" for="studio">Studio</label>
-                            <input type="radio" name="unitType" id="1bed" value="1bed">
+                            <input class="radchckInput" type="radio" name="unitType" id="1bed" value="1bed">
                             <label class="labelBox" for="1bed">1 Bedroom</label>
-                            <input type="radio" name="unitType" id="2bed" value="2bed">
+                            <input class="radchckInput" type="radio" name="unitType" id="2bed" value="2bed">
                             <label class="labelBox" for="2bed">2 Bedroom</label>
-                            <input type="radio" name="unitType" id="mhu" value="MaternityHousingUnit">
+                            <input class="radchckInput" type="radio" name="unitType" id="mhu" value="MaternityHousingUnit">
                             <label class="labelBox" for="mhu">Maternity Housing Unit</label>
-                            <label>Other:
-                                <input type="text" name="uTypeOther" placeholder="Please explain why you chose other">
+                            <label class="displayLabel">Other:
+                                <input class="displayInput" type="text" name="uTypeOther" placeholder="Please explain why you chose other">
                             </label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Furnished:</legend>
-                            <input type="radio" id="fullyfur" name="furnished" value="FullyFurnished">
+                            <input class="radchckInput" type="radio" id="fullyfur" name="furnished" value="FullyFurnished">
                             <label class="labelBox" for="fullyfur">Fully Furnished</label>
-                            <input type="radio" id="parfur" name="furnished" value="PartiallyFurnished">
+                            <input class="radchckInput" type="radio" id="parfur" name="furnished" value="PartiallyFurnished">
                             <label class="labelBox" for="parfur">Partially Furnished</label>
-                            <input type="radio" id="notfur" name="notfur" value="No">
+                            <input class="radchckInput" type="radio" id="notfur" name="notfur" value="No">
                             <label class="labelBox" for="notfur">Not Furnished</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Unit Includes: (check all that apply)</legend>
-                            <input type="checkbox" id="ktchn" name="ktchn" value="kitchen">
+                            <input class="radchckInput" type="checkbox" id="ktchn" name="ktchn" value="kitchen">
                             <label class="labelBox" for="ktchn">Kitchen</label>
-                            <input type="checkbox" id="prvtBath" name="prvtBath" value="PrivateBath">
+                            <input class="radchckInput" type="checkbox" id="prvtBath" name="prvtBath" value="PrivateBath">
                             <label class="labelBox" for="prvtBath">Private Bathroom (in room)</label>
-                            <input type="checkbox" id="shrdBath" name="shrdBath" value="Shared Bathroom">
+                            <input class="radchckInput" type="checkbox" id="shrdBath" name="shrdBath" value="Shared Bathroom">
                             <label class="labelBox" for="shrdBath">Shared Bathroom</label>
-                            <input type="checkbox" id="pLaundry" name="plaundry" value="PersonalLaundry">
+                            <input class="radchckInput" type="checkbox" id="pLaundry" name="plaundry" value="PersonalLaundry">
                             <label class="labelBox" for="pLaundry">Personal Laundry (inside unit)</label>
-                            <input type="checkbox" id="sLaundry" name="slaundry" value="SharedLaundry">
+                            <input class="radchckInput" type="checkbox" id="sLaundry" name="slaundry" value="SharedLaundry">
                             <label class="labelBox" for="sLaundry">Shared Laundry (within the building)</label>
-                            <input type="checkbox" id="dningRoom" name="dningRoom" value="DiningRoom">
+                            <input class="radchckInput" type="checkbox" id="dningRoom" name="dningRoom" value="DiningRoom">
                             <label class="labelBox" for="dningRoom">Dining Room</label>
-                            <input type="checkbox" id="lvingRoom" name="lvingRoom" value="LivingRoom">
+                            <input class="radchckInput" type="checkbox" id="lvingRoom" name="lvingRoom" value="LivingRoom">
                             <label class="labelBox" for="lvingRoom">Living Room</label>
-                            <input type="checkbox" id="wifi" name="wifi" value="Wifi">
+                            <input class="radchckInput" type="checkbox" id="wifi" name="wifi" value="Wifi">
                             <label class="labelBox" for="wifi">Wifi</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Does unit have stairs (either inside unit or to access unit)?</legend>
-                            <input type="radio" id="stairsYes" name="stairsYesNo" value="Yes">
+                            <input class="radchckInput" type="radio" id="stairsYes" name="stairsYesNo" value="Yes">
                             <label class="labelBox" for="stairsYes">Yes</label>
-                            <input type="radio" id="stairsNo" name="stairsYesNo" value="No">
+                            <input class="radchckInput" type="radio" id="stairsNo" name="stairsYesNo" value="No">
                             <label class="labelBox" for="stairsNo">No</label>
                     </fieldset>
                     <input class="loginButton" type="submit" value="Create">

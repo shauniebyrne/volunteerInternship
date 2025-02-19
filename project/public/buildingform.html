@@ -37,186 +37,186 @@
             <form action="" class="loginForm">
                 <fieldset class="innerForm">
                     <legend>Please answer all questions</legend>
-                    <label>Building Name:
-                        <input type="text" name="buildingName" required>
+                    <label class="displayLabel">Building Name:
+                        <input class="displayInput" type="text" name="buildingName" required>
                     </label>
-                    <label>Street Address:
-                        <input type="text" name="buildingStreet" required>
+                    <label class="displayLabel">Street Address:
+                        <input class="displayInput" type="text" name="buildingStreet" required>
                     </label>
-                    <label>City:
-                        <input type="text" name="buildingCity" required>
+                    <label class="displayLabel">City:
+                        <input class="displayInput" type="text" name="buildingCity" required>
                     </label>
-                    <label>State:
-                        <input type="text" name="buildingState" required>
+                    <label class="displayLabel">State:
+                        <input class="displayInput" type="text" name="buildingState" required>
                     </label>
-                    <label>ZIP Code:
-                        <input type="text" name="buildingZIP" required>
+                    <label class="displayLabel">ZIP Code:
+                        <input class="displayInput" type="text" name="buildingZIP" required>
                     </label>
-                    <label>Primary Contact Phone Number:
-                        <input type="tel" name="buildingPhnNmbr" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7891">
+                    <label class="displayLabel">Primary Contact Phone Number:
+                        <input class="displayInput" type="tel" name="buildingPhnNmbr" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7891">
                     </label>
-                    <label>Contact Email:
-                        <input type="email" name="companyEmail" required placeholder="companyname@gmail.com">
+                    <label class="displayLabel">Contact Email:
+                        <input class="displayInput" type="email" name="companyEmail" required placeholder="companyname@gmail.com">
+                    </label>
+                    <label class="displayLabel">Language used for services and/or support:
+                        <input class="displayInput" type="text" name="language" required>
                     </label>
                     <fieldset class="innerForm">
                         <legend>Resident Assistance (RA)?</legend>
-                            <input type="radio" id="RAyes" name="RAyesNo" value="Yes">
+                            <input class="radchckInput" type="radio" id="RAyes" name="RAyesNo" value="Yes">
                             <label class="labelBox" for="RAyes">Yes</label>
-                            <input type="radio" id="RAno" name="RAyesNo" value="No">
+                            <input class="radchckInput" type="radio" id="RAno" name="RAyesNo" value="No">
                             <label class="labelBox" for="RAno">No</label>
                     </fieldset>
-                    <label>Language used for services and/or support:
-                        <input type="text" name="language" required>
-                    </label>
                     <fieldset class="innerForm">
                         <legend>Are pets allowed?</legend>
-                            <input type="radio" id="petYes" name="petYesNo" value="Yes">
+                            <input class="radchckInput" type="radio" id="petYes" name="petYesNo" value="Yes">
                             <label class="labelBox" for="petYes">Yes</label>
-                            <input type="radio" id="petNo" name="petYesNo" value="No">
+                            <input class="radchckInput" type="radio" id="petNo" name="petYesNo" value="No">
                             <label class="labelBox" for="petNo">No</label>
-                            <label>Other:
-                                <input type="text" name="petOther" placeholder="Please explain why you chose other">
+                            <label class="displayLabel">Other:
+                                <input class="displayInput" type="text" name="petOther" placeholder="Please explain why you chose other">
                             </label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Do you provide shared co-working spaces?</legend>
-                            <input type="radio" id="coWorkYes" name="CoWorkYesNo" value="Yes">
+                            <input class="radchckInput" type="radio" id="coWorkYes" name="CoWorkYesNo" value="Yes">
                             <label class="labelBox" for="coWorkYes">Yes</label>
-                            <input type="radio" id="coWorkNo" name="CoWorkYesNo" value="No">
+                            <input class="radchckInput" class="radchckInput" type="radio" id="coWorkNo" name="CoWorkYesNo" value="No">
                             <label class="labelBox" for="coWorkNo">No</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Do you provide study rooms (private work areas)?</legend>
-                            <input type="radio" id="stdyRmYes" name="stdyRmYesNo" value="Yes">
+                            <input class="radchckInput" type="radio" id="stdyRmYes" name="stdyRmYesNo" value="Yes">
                             <label class="labelBox" for="stdyRmYes">Yes</label>
-                            <input type="radio" id="stdyRmNo" name="stdyRmYesNo" value="No">
+                            <input class="radchckInput" type="radio" id="stdyRmNo" name="stdyRmYesNo" value="No">
                             <label class="labelBox" for="stdyRmNo">No</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Do you require a background check?</legend>
-                            <input type="radio" id="bkgrndYes" name="bkgrndYesNo" value="Yes">
+                            <input class="radchckInput" type="radio" id="bkgrndYes" name="bkgrndYesNo" value="Yes">
                             <label class="labelBox" for="bkgrndYes">Yes</label>
-                            <input type="radio" id="bkgrndNo" name="bkgrndYesNo" value="No">
+                            <input class="radchckInput" type="radio" id="bkgrndNo" name="bkgrndYesNo" value="No">
                             <label class="labelBox" for="bkgrndNo">No</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Do you require a credit check?</legend>
-                            <input type="radio" id="crdtYes" name="crdtYesNo" value="Yes">
+                            <input class="radchckInput" type="radio" id="crdtYes" name="crdtYesNo" value="Yes">
                             <label class="labelBox" for="crdtYes">Yes</label>
-                            <input type="radio" id="crdtNo" name="crdtYesNo" value="No">
+                            <input class="radchckInput" type="radio" id="crdtNo" name="crdtYesNo" value="No">
                             <label class="labelBox" for="crdtNo">No</label>
                     </fieldset>
-                    <label>Is there flexibility or support if a resident doesn't pass the background or credit check (if needed)?
-                        <input type="text" name="extraSupport" placeholder="If answer is yes, please explain">
+                    <label class="displayLabel">Is there flexibility or support if a resident doesn't pass the background or credit check (if needed)?
+                        <input class="displayInput" type="text" name="extraSupport" placeholder="If answer is yes, please explain">
                     </label>
                     <fieldset class="innerForm">
                         <legend>Transportation Services: (check all that apply)</legend>
-                            <input type="checkbox" id="shuttle" name="shuttle" value="ShuttleServices">
-                            <label class="labelBox" for="shuttle">Shuttle Services (to public transport or city centers)</label>
-                            <input type="checkbox" id="pblcTrans" name="pblcTrans" value="PublicTransportation">
-                            <label class="labelBox" for="pblcTrans">Public Transportation (bus or train)</label>
-                            <input type="checkbox" id="bksctr" name="bksctr" value="BikeScooter">
+                            <input class="radchckInput" type="checkbox" id="shuttle" name="shuttle" value="ShuttleServices">
+                            <label class="labelBox" for="shuttle">Shuttle Services</label>
+                            <input class="radchckInput" type="checkbox" id="pblcTrans" name="pblcTrans" value="PublicTransportation">
+                            <label class="labelBox" for="pblcTrans">Public Transportation</label>
+                            <input class="radchckInput" type="checkbox" id="bksctr" name="bksctr" value="BikeScooter">
                             <label class="labelBox" for="bksctr">Onsite bike/scooter rental or storage</label>
-                            <input type="checkbox" id="transNo" name="transNo" value="No">
+                            <input class="radchckInput" type="checkbox" id="transNo" name="transNo" value="No">
                             <label class="labelBox" for="transNo">No</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Do you provide internet access in the building?</legend>
-                            <input type="radio" id="intntYes" name="intntYesNo" value="Yes">
+                            <input class="radchckInput" type="radio" id="intntYes" name="intntYesNo" value="Yes">
                             <label class="labelBox" for="intntYes">Yes</label>
-                            <input type="radio" id="intntNo" name="intntYesNo" value="No">
+                            <input class="radchckInput" type="radio" id="intntNo" name="intntYesNo" value="No">
                             <label class="labelBox" for="intntNo">No</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Common Area Services: (check all that apply)</legend>
-                            <input type="checkbox" id="lounge" name="lounge" value="LoungeArea">
+                            <input class="radchckInput" type="checkbox" id="lounge" name="lounge" value="LoungeArea">
                             <label class="labelBox" for="lounge">Lounge Area</label>
-                            <input type="checkbox" id="recSpace" name="recSpace" value="RecSpace">
+                            <input class="radchckInput" type="checkbox" id="recSpace" name="recSpace" value="RecSpace">
                             <label class="labelBox" for="recSpace">Recreations Space (gym)</label>
-                            <input type="checkbox" id="ktchn" name="ktchn" value="Kitchen">
+                            <input class="radchckInput" type="checkbox" id="ktchn" name="ktchn" value="Kitchen">
                             <label class="labelBox" for="ktchn">Shared Kitchen</label>
-                            <input type="checkbox" id="movie" name="movie" value="MovieTheater">
+                            <input class="radchckInput" type="checkbox" id="movie" name="movie" value="MovieTheater">
                             <label class="labelBox" for="movie">Movie Theater or Screen Room</label>
-                            <input type="checkbox" id="game" name="game" value="GameRoom">
+                            <input class="radchckInput" type="checkbox" id="game" name="game" value="GameRoom">
                             <label class="labelBox" for="game">Game Room (pool table, video games)</label>
-                            <input type="checkbox" id="caNo" name="caNo" value="No">
+                            <input class="radchckInput" type="checkbox" id="caNo" name="caNo" value="No">
                             <label class="labelBox" for="caNo">No</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Disability Accessible?</legend>
-                            <input type="radio" id="daYes" name="daYesNo" value="Yes">
+                            <input class="radchckInput" type="radio" id="daYes" name="daYesNo" value="Yes">
                             <label class="labelBox" for="daYes">Yes</label>
-                            <input type="radio" id="daNo" name="daYesNo" value="No">
+                            <input class="radchckInput" type="radio" id="daNo" name="daYesNo" value="No">
                             <label class="labelBox" for="daNo">No</label>
-                            <label>Partially Accessible:
-                                <input type="text" name="daPA" placeholder="Please specify">
+                            <label class="displayLabel">Partially Accessible:
+                                <input class="displayInput" type="text" name="daPA" placeholder="Please specify">
                             </label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Security Measures: (check all that apply)</legend>
-                            <input type="checkbox" id="security" name="security" value="security">
+                            <input class="radchckInput" type="checkbox" id="security" name="security" value="security">
                             <label class="labelBox" for="security">24/7 Security Personnel</label>
-                            <input type="checkbox" id="camera" name="camera" value="SurveillanceCamera">
+                            <input class="radchckInput" type="checkbox" id="camera" name="camera" value="SurveillanceCamera">
                             <label class="labelBox" for="camera">Surveillance Camera</label>
-                            <input type="checkbox" id="gate" name="gate" value="GatedEntry">
+                            <input class="radchckInput" type="checkbox" id="gate" name="gate" value="GatedEntry">
                             <label class="labelBox" for="gate">Gated Entry</label>
-                            <input type="checkbox" id="smNo" name="smNo" value="No">
+                            <input class="radchckInput" type="checkbox" id="smNo" name="smNo" value="No">
                             <label class="labelBox" for="smNo">No</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Parking:</legend>
-                            <input type="radio" id="pps" name="parking" value="PersonalParkingSpace">
+                            <input class="radchckInput" type="radio" id="pps" name="parking" value="PersonalParkingSpace">
                             <label class="labelBox" for="pps">Personal Parking Space</label>
-                            <input type="radio" id="sharedP" name="parking" value="SharedParking">
+                            <input class="radchckInput" type="radio" id="sharedP" name="parking" value="SharedParking">
                             <label class="labelBox" for="sharedP">Shared Parking Lot</label>
-                            <input type="radio" id="both" name="parking" value="Both">
-                            <label class="labelBox" for="both">Both Shared Parking and a Personal Parking Space</label>
-                            <input type="radio" id="parkingNo" name="parking" value="No">
+                            <input class="radchckInput" type="radio" id="both" name="parking" value="Both">
+                            <label class="labelBox" for="both">Both Shared Parking and Personal Parking</label>
+                            <input class="radchckInput" type="radio" id="parkingNo" name="parking" value="No">
                             <label class="labelBox" for="parkingNo">No</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Maternity Services: (check all that apply)</legend>
-                            <input type="checkbox" id="childcare" name="childcare" value="childcare">
+                            <input class="radchckInput" type="checkbox" id="childcare" name="childcare" value="childcare">
                             <label class="labelBox" for="childcare">On-site childcare services</label>
-                            <input type="checkbox" id="ppnatal" name="ppnatal" value="NatalCare">
+                            <input class="radchckInput" type="checkbox" id="ppnatal" name="ppnatal" value="NatalCare">
                             <label class="labelBox" for="ppnatal">Pre- and Post-natal care</label>
-                            <input type="checkbox" id="support" name="support" value="SupportGroups">
+                            <input class="radchckInput" type="checkbox" id="support" name="support" value="SupportGroups">
                             <label class="labelBox" for="support">Support groups for mothers</label>
-                            <input type="checkbox" id="msNo" name="msNo" value="No">
+                            <input class="radchckInput" type="checkbox" id="msNo" name="msNo" value="No">
                             <label class="labelBox" for="msNo">No</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Food or Meal Services: (check all that apply)</legend>
-                            <input type="checkbox" id="meal" name="meal" value="MealPlan">
+                            <input class="radchckInput" type="checkbox" id="meal" name="meal" value="MealPlan">
                             <label class="labelBox" for="meal">Meal Plan</label>
-                            <input type="checkbox" id="cafeteria" name="cafeteria" value="cafeteria">
+                            <input class="radchckInput" type="checkbox" id="cafeteria" name="cafeteria" value="cafeteria">
                             <label class="labelBox" for="cafeteria">On-site Cafeteria</label>
-                            <input type="checkbox" id="dining" name="dining" value="Dining">
+                            <input class="radchckInput" type="checkbox" id="dining" name="dining" value="Dining">
                             <label class="labelBox" for="dining">Dining Hall</label>
-                            <input type="checkbox" id="pantry" name="pantry" value="FoodPantry">
+                            <input class="radchckInput" type="checkbox" id="pantry" name="pantry" value="FoodPantry">
                             <label class="labelBox" for="pantry">Food Pantry</label>
-                            <input type="checkbox" id="gdelivery" name="gdelivery" value="GroceryDelivery">
+                            <input class="radchckInput" type="checkbox" id="gdelivery" name="gdelivery" value="GroceryDelivery">
                             <label class="labelBox" for="gdelivery">Grocery Delivery</label>
-                            <input type="checkbox" id="fmNo" name="fmNo" value="No">
+                            <input class="radchckInput" type="checkbox" id="fmNo" name="fmNo" value="No">
                             <label class="labelBox" for="fmNo">No</label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Technology or Digital Resources: (check all that apply)</legend>
-                            <input type="checkbox" id="lab" name="lab" value="ComputerLab">
+                            <input class="radchckInput" type="checkbox" id="lab" name="lab" value="ComputerLab">
                             <label class="labelBox" for="lab">Computer Lab</label>
-                            <input type="checkbox" id="printing" name="printing" value="printing">
+                            <input class="radchckInput" type="checkbox" id="printing" name="printing" value="printing">
                             <label class="labelBox" for="printing">Printing Services</label>
-                            <input type="checkbox" id="tNo" name="tNo" value="No">
+                            <input class="radchckInput" type="checkbox" id="tNo" name="tNo" value="No">
                             <label class="labelBox" for="tNo">No</label>
-                            <label>Other
-                                <input type="text" name="tother" placeholder="Any other technology resources">
+                            <label class="displayLabel">Other
+                                <input class="displayInput" type="text" name="tother" placeholder="Any other technology resources">
                             </label>
                     </fieldset>
                     <fieldset class="innerForm">
                         <legend>Shared Laundry?</legend>
-                            <input type="radio" id="slYes" name="slYesNo" value="Yes">
+                            <input class="radchckInput" type="radio" id="slYes" name="slYesNo" value="Yes">
                             <label class="labelBox" for="slYes">Yes</label>
-                            <input type="radio" id="slNo" name="slYesNo" value="No">
+                            <input class="radchckInput" type="radio" id="slNo" name="slYesNo" value="No">
                             <label class="labelBox" for="slNo">No</label>
                     </fieldset>
                     <input class="loginButton" type="submit" value="Create">
