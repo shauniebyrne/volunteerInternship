@@ -184,3 +184,9 @@ nav ul li:hover {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Link to edit buttons */
+.btnLnk {
+    text-decoration: none;
+    color: var(--text-color);
+}

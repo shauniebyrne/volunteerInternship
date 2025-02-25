@@ -14,18 +14,21 @@ User will enter their wanted username, email, password, confirm password (backgr
 # Form Page (provider)
 ---
 # Provider Form
-This form is for the Provider to fill out their personal firms information. This will be used to be included with the Building Info Page and the Unit Info Page.
+This form is for the Provider to fill out their personal company information. This will be used to be included with the Provider Page, Building Info Page, and the Unit Info Page.
 
 # Building Form
-The Provider will fill out this form for all the buildings they own that they want available to be rented out. The form's info will be directed to the database to be able to be retrieved later on the provider, map, building info, unit info, buildings, and units pages. Provider will be able to click "+ Add more Buildings" to add more information to the database without having to create a form every time (so they can add all buildings at once).
+The Provider will fill out this form for all the buildings they own that they want available to be rented out. The form's info will be directed to the database to be able to be retrieved later on the provider, map, building info, unit info, buildings, and units pages. Provider will be able to click "+ Add more Buildings" to add more information to the database without having to create a form every time (so they can add all buildings at once) - if possible.
 
 # Unit Form
-The Provider will fill out this form for all the units they own that they want available to be rented out. The form's info will be directed to the database to be able to be retrieved later on the provider, map, building info, unit info, buildings, and units pages. Provider will be able to click on "Add more Units" to be able to add more information to the database all at once (add all units all at once).
+The Provider will fill out this form for all the units they own that they want available to be rented out. The form's info will be directed to the database to be able to be retrieved later on the provider, map, building info, unit info, buildings, and units pages. Provider will be able to click on "Add more Units" to be able to add more information to the database all at once (add all units all at once) - if possible.
 ---
 
 # Provider Page (provider)
 The Provider is directed to this page after logging in. Here, they will be able to see a list of all their buildings and associated units. They should be able to edit the information here (via a button with a link to a new form) or be able to delete all the information for that specific unit or building or their own personal information.
 ---
+
+# Edit Pages (provider)
+The provider will be directed to these pages when they need to edit any information they entered. They will do this by clicking on the edit button (sample is given on provider page - I linked the edit buttons to the proper edit pages - but I understand it will need to be done a bit differently because data will need to be collected from the database so each edit page will need to be referenced specifically - in the URL- to each personal provider or building or data) These are just sample pages of what they could look like. You can make all three editing pages (for provider form, building form, and unit form) what you need them to look like to function. Also, the form would need to be prefilled with what they entered, that way the provider only needs to change one thing and not re-enter all fields.
 
 # Map Page (coach)
 The coach should be directed to this page automatically after logging in. This page will have a map with pins to all the available buildings. The top will also have a filter where the coach can click on things they want included in buildings, and the filter will only show buildings that are available with those specific items. The coach can then click on the pin and be taken to the buildingInfo.html page via a link.
@@ -53,6 +56,6 @@ This page can be accessed by a coach via the navigation bar at the top of the pa
 
 2: Provider Information - Name, Address, Contact Information
 
-3: Building Information - Key is Provider Name (that way when any information is saved or used for pages, it is connected to the right provider - for instance, when a provider logs in, they can only see their buildings/units; when a coach clicks on the map to see a building, the information for the provider pops up too), 
+3: Building Information - Key is Provider Name (that way when any information is saved or used for pages, it is connected to the right provider - for instance, when a provider logs in, they can only see their buildings/units; when a coach clicks on the map to see a building, the information for the provider pops up too)
 
 4: Unit Information - Key is Building Information (so when a building is clicked on, the unit information is connected), 
