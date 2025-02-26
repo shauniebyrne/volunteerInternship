@@ -32,45 +32,44 @@
     </header>
     <main>
         <div>
+            <h1>Sort By:</h1>
             <form>
                 <fieldset>
-                    <legend>Amenities:</legend>
-                    <label>Garage
-                        <input type="checkbox" id="garage" name="garage">
+                    <legend>Rent:</legend>
+                    <label>Range Between 0 and 3000
+                        <input type="range" name="rent" min="0" max="3000">
                     </label>
-                    <label>Laundry
-                        <input type="checkbox" id="laundry" name="laundry">
-                    </label>
-                    <label>Parking
-                        <input type="checkbox" id="parking" name="parking">
+                </fieldset>
+                <fieldset>
+                    <legend>Age Range:</legend>
+                    <label>Range Between 0 and 100
+                        <input type="range" name="rent" min="0" max="100">
                     </label>
                 </fieldset>
                 <fieldset>
                     <legend>Gender:</legend>
-                    <label>Male
-                        <input type="checkbox" id="male" name="male">
-                    </label>
-                    <label>Female</label>
-                        <input type="checkbox" id="female" name="female">
-                    </label>
+                    <input type="checkbox" id="fgen" name="fgen">
+                    <label for="fgen">Female</label>
+                    <input type="checkbox" id="mgen" name="mgen">
+                    <label for="mgen">Male</label>
                 </fieldset>
                 <fieldset>
-                    <legend>Nearest Schools:</legend>
-                    <label>McClintock High School
-                        <input type="checkbox" name="mhs" id="mhs">
-                    </label>
-                    <label>Tempe High School
-                        <input type="checkbox" name="ths" id="ths">
-                    </label>
-                    <label>Humanities & Sciences Academy
-                        <input type="checkbox" name="hsa" id="hsa">
-                    </label>
-                    <label>Arizona State University
-                        <input type="checkbox" name="asu" id="asu">
-                    </label>
-                    <label>Mesa Community College
-                        <input type="checkbox" name="mcc" id="mdd">
-                    </label>
+                    <legend>Amenities:</legend>
+                        <input type="checkbox" id="garage" name="garage">
+                        <label for="garage">Garage</label>
+                        <input type="checkbox" id="parking" name="parking">
+                        <label for="parking">Parking</label>
+                        <input type="checkbox" id="laundry" name="laundry">
+                        <label for="laundry">Laundry</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Phase:</legend>
+                        <input type="checkbox" id="ph1" name="ph1">
+                        <label for="ph1">Phase 1</label>
+                        <input type="checkbox" id="ph2" name="ph2">
+                        <label for="ph2">Phase 2</label>
+                        <input type="checkbox" id="ph3" name="ph3">
+                        <label for="ph3">Phase 3</label>
                 </fieldset>
             </form>
         </div>
