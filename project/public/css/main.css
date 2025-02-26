@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5 {
     font-family: "Palanquin Dark", serif;
     font-weight: 700;
     text-align: center;
-    padding: 2px;
+    padding: 5px;
 }
 
 h1 {
@@ -70,7 +70,7 @@ h4 {
 
 p {
     text-align: center;
-    padding: 2px;
+    padding: 5px;
 }
 
 /* Navigation Bar for all pages */
@@ -139,7 +139,7 @@ nav ul li:hover {
     border-radius: 10px;
     border: 5px solid var(--accentOne-color);
     display: block;
-    max-width: 65%;
+    max-width: 55%;
     margin: 10px auto;
 }
 
@@ -148,7 +148,7 @@ nav ul li:hover {
     border-radius: 10px;
     border: 5px solid var(--accentOne-color);
     display: block;
-    margin: 10px;
+    margin: 10px auto;
 }
 
 .innerBox {
@@ -185,8 +185,12 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-/* Link to edit buttons */
+/* Link to edit buttons and titles */
 .btnLnk {
     text-decoration: none;
     color: var(--text-color);
+}
+
+h3 a {
+    text-decoration: none;
 }
