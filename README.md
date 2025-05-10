@@ -1,8 +1,3 @@
-# Extended Foster Care
-Extended Foster Care website for coaches and housing providers
----
----
-
 # Login Page
 User will either sign in using username, password, and ranking (admin, coach, or provider) on file or click "create account" to create a new account. When clicked on "create account" the user is redirected to the account page. Password should be encrypted as it enters database. The admin should gain access to every page in the website. The Coach should be directed to the map page once signed in and should only have access to the map, building, and unit pages. The housing provider should be directed to the provider page once signed in and only have access to provider page and form pages.
 ---
